@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import RealCases from './components/RealCases';
+import Try from './components/Try';
 import Pricing from './components/Pricing';
 import Sobre from './components/Sobre';
 import Questions from './components/Questions';
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <HowItWorks />
       <RealCases />
+      <Try />
       <Pricing />
       <Sobre />
       <Questions />
