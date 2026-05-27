@@ -4,7 +4,11 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     question: "Como a Inteligência Artificial calcula as calorias?",
-    answer: "Nossa IA analisa a foto enviada, identifica os alimentos e estima o tamanho das porções. Em seguida, ela cruza essas informações com uma extensa base de dados nutricionais para calcular as calorias e os macronutrientes do seu prato de forma rápida."
+    answer: "Nossa IA analisa a foto enviada, identifica os alimentos e estima o tamanho das porções. Em seguida, ela cruza essas informações com uma extensa base de dados nutricionais para calcular as calorias e os macronutrientes do seu prato de forma rápida. A ideia é saber uma estimativa orientativa, não como número clínico exato. Pratos com poucos itens, porções visíveis e alimentos familiares tendem a ficar bem mais próximos do real; já pratos mistos, molhos, frituras, porções “camufladas” e receitas caseiras aumentam bastante a incerteza de quantas calorias existem de fato. Considere uma margem de erro de ±10% ou ±20% em certas análises."
+  },
+  {
+    question: "Qual é a proposta do ClickDish?",
+    answer: "Nossa IA analisa a foto enviada, identifica os alimentos e estima o tamanho das porções. O objetivo é ajudar o usuário a ter consciência alimentar, não substituir uma avaliação nutricional. E fazer isso de forma divertida e gamificada para compartilhar o progresso individual com os amigos e familiares."
   },
   {
     question: "Preciso pagar para testar o aplicativo?",

@@ -21,7 +21,7 @@ const Pricing = () => {
                         
                         <ul className="space-y-2 sm:space-y-4 text-gray-700 mb-12 flex-grow font-medium">
                             <li className="flex items-center">
-                                <span className="text-clickdish-green text-md sm:text-xl mr-3 drop-shadow-sm">✅</span><span className='text-sm'>3 análises de pratos por dia.  </span>
+                                <span className="text-clickdish-green text-md sm:text-xl mr-3 drop-shadow-sm">✅</span><span className='text-sm'>3 análises de pratos por dia (mais de 90 análises por mês!).  </span>
                             </li>
                             <li className="flex items-center">
                                 <span className="text-clickdish-green text-md sm:text-xl mr-3 drop-shadow-sm">✅</span><span className='text-sm'>Nomes e resumos divertidos.</span>

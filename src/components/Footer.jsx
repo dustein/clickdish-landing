@@ -10,7 +10,7 @@ const Footer = () => {
                     <img src={logo} alt="Logo" className="h-10 sm:h-12 w-auto" />
                     <span className="text-3xl sm:text-4xl font-bold text-purple-500">Click<span className="text-clickdish-magenta">Dish</span></span>
                 </div>
-                <p className="text-gray-300 max-w-sm mx-auto mb-10 font-medium">Transformando a rotina saudável em um lifestyle visualmente épico.</p>
+                <p className="text-gray-300 text-2xl md:text-4xl mx-auto mb-10 font-medium">Transformando a rotina saudável em um lifestyle visualmente épico.</p>
                 <p className='mb-4'>Precisa de ajuda? Contate-nos em: <a href="mailto:suporte@clickdish.fit" className='underline font-bold'>suporte@clickdish.fit</a></p>
                 <p className="my-6 text-xl">Fitness e Nutrição devem ser divertidos e <span className="text-clickdish-green font-semibold">saudáveis!</span></p>
                 <p className="text-gray-400 text-xs sm:text-sm font-medium">© 2026 ClickDish. Todos os direitos reservados.</p>
