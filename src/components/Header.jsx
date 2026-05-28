@@ -69,10 +69,10 @@ const Header = () => {
                         </a>
                         <div className="pt-2">
                             <a 
-                                href="#" 
+                                href="https://app.clickdish.fit" 
                                 className="block w-full text-center bg-clickdish-purple text-white px-5 py-3 rounded-full font-semibold hover:bg-clickdish-magenta transition"
                             >
-                                Login
+                                Acessar App
                             </a>
                         </div>
                     </div>

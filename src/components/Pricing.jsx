@@ -17,7 +17,10 @@ const Pricing = () => {
                             <span className="text-2xl sm:text-4xl filter drop-shadow-md">🥗</span>
                         </div>
                         <p className="text-gray-600 mb-3 sm:mb-6 font-medium text-sm sm:text-lg">Pra buscar o foco na consistência.</p>
-                        <div className="text-2xl sm:text-5xl font-extrabold text-clickdish-dark mb-4 sm:mb-10 tracking-tight">R$ 7,90 <span className="text-base sm:text-lg text-gray-400 font-medium tracking-normal">/mês</span></div>
+                        <div className="mb-4 sm:mb-10">
+                            <span className="block text-lg sm:text-xl text-gray-500 line-through font-medium mb-0.5 sm:mb-1">R$ 9,90</span>
+                            <div className="text-2xl sm:text-5xl font-extrabold text-clickdish-dark tracking-tight">R$ 7,90 <span className="text-base sm:text-lg text-gray-400 font-medium tracking-normal">/mês</span></div>
+                        </div>
                         
                         <ul className="space-y-2 sm:space-y-4 text-gray-700 mb-12 flex-grow font-medium">
                             <li className="flex items-center">
@@ -46,7 +49,10 @@ const Pricing = () => {
                             <span className="text-2xl sm:text-4xl filter drop-shadow-lg">💪</span>
                         </div>
                         <p className="text-gray-300 mb-1 sm:mb-6 font-medium text-sm sm:text-lg">Para quem já tem comprometimento e persistência!</p>
-                        <div className="text-2xl sm:text-5xl font-extrabold text-white mb-2 tracking-tight drop-shadow-md">R$ 67,90 <span className="text-base sm:text-lg text-gray-400 font-medium tracking-normal">/ano</span></div>
+                        <div className="mb-2">
+                            <span className="block text-lg sm:text-xl text-gray-400 line-through font-medium mb-0.5 sm:mb-1">R$ 83,90</span>
+                            <div className="text-2xl sm:text-5xl font-extrabold text-white tracking-tight drop-shadow-md">R$ 67,90 <span className="text-base sm:text-lg text-gray-400 font-medium tracking-normal">/ano</span></div>
+                        </div>
                         <p className="text-yellow-400 font-bold mb-8 text-md sm:text-lg">(Apenas R$ 5,65/mês)</p>
                         <ul className="space-y-2 sm:space-y-4 text-white/90 mb-12 flex-grow font-medium">
                             <li className="flex items-center text-yellow-400">
