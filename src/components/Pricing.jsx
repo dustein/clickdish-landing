@@ -2,8 +2,11 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <section id="precos" className="py-8 sm:py-24 bg-gradient-to-b from-gray-50 to-gray-150">
+        <section id="precos" className="py-2 sm:py-12 bg-gradient-to-b from-gray-50 to-gray-150">
             <div className="container mx-auto px-6 relative">
+                {/* <p className="text-xl md:text-2xl font-extrabold text-center text-clickdish-purple/50 mb-2 sm:mb-4 drop-shadow-sm">
+                    ou
+                </p> */}
                 <h2 className="text-2xl md:text-5xl font-extrabold text-center text-clickdish-purple mb-8 sm:mb-24 drop-shadow-sm">
                     Escolha Seu Plano de <span className="text-clickdish-green">Card </span><span className="text-purple-800">Click</span><span className="text-clickdish-magenta">Dish</span>
                 </h2>

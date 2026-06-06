@@ -24,6 +24,9 @@ const Try = () => {
                         Teste sem custo ! 🚀
                     </a>
                 </div>
+                <p className="text-xl md:text-2xl font-extrabold text-center text-clickdish-purple mt-6 sm:mt-8 drop-shadow-sm">
+                    ou ...
+                </p>
             </div>
         </section>
     );

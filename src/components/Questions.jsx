@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
 const faqs = [
-  {
-    question: "Como a Inteligência Artificial calcula as calorias?",
-    answer: "Nossa IA analisa a foto enviada, identifica os alimentos e estima o tamanho das porções. Em seguida, ela cruza essas informações com uma extensa base de dados nutricionais para calcular as calorias e os macronutrientes do seu prato de forma rápida. A ideia é saber uma estimativa orientativa, não como número clínico exato. Pratos com poucos itens, porções visíveis e alimentos familiares tendem a ficar bem mais próximos do real; já pratos mistos, molhos, frituras, porções “camufladas” e receitas caseiras aumentam bastante a incerteza de quantas calorias existem de fato. Considere uma margem de erro de ±10% ou ±20% em certas análises."
-  },
+  
   {
     question: "Qual é a proposta do ClickDish?",
     answer: "Nossa IA analisa a foto enviada, identifica os alimentos e estima o tamanho das porções. O objetivo é ajudar o usuário a ter consciência alimentar, não substituir uma avaliação nutricional. E fazer isso de forma divertida e gamificada para compartilhar o progresso individual com os amigos e familiares."
+  },
+  {
+    question: "Como a Inteligência Artificial calcula as calorias?",
+    answer: "Nossa IA analisa a foto enviada, identifica os alimentos e estima o tamanho das porções. Em seguida, ela cruza essas informações com uma extensa base de dados nutricionais para calcular as calorias e os macronutrientes do seu prato de forma rápida. A ideia é gerar uma estimativa orientativa para medir sua constância e disciplina no cuidado da saúde alimentar, não como número clínico exato. Considere uma margem de erro de ±15% em certas análises dependendo da arrumação do alimentos no prato."
   },
   {
     question: "Preciso pagar para testar o aplicativo?",
@@ -23,7 +24,7 @@ const faqs = [
     answer: "Sim, com certeza! Não existe fidelidade. Você pode gerenciar ou cancelar a sua assinatura a qualquer momento de forma simples, direto pelo painel principal da aplicação, ou pela plataforma parceira (Mercado Pago)."
   },
   {
-    question: "Consigo compartilhar o resultado no meu Instagram?",
+    question: "Consigo compartilhar o resultado no meu Instagram e WhatsApp?",
     answer: "É pra já! O ClickDish foi criado pensando exatamente nas suas redes sociais. O aplicativo gera um card premium incrível com a foto do seu prato, o título bem-humorado e os detalhes para você postar nos stories com apenas um clique."
   },
   {
