@@ -667,6 +667,10 @@ video {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .-mr-10 {
   margin-right: -2.5rem;
 }
@@ -1431,6 +1435,9 @@ video {
 .p-8 {
   padding: 2rem;
 }
+.p-80 {
+  padding: 20rem;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1494,6 +1501,10 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .pb-14 {
   padding-bottom: 3.5rem;
@@ -2244,6 +2255,14 @@ html, body {
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
 
+  .sm\:border {
+    border-width: 1px;
+  }
+
+  .sm\:border-white\/20 {
+    border-color: rgb(255 255 255 / 0.2);
+  }
+
   .sm\:bg-white\/10 {
     background-color: rgb(255 255 255 / 0.1);
   }
@@ -2300,6 +2319,11 @@ html, body {
     padding-bottom: 1.25rem;
   }
 
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2333,6 +2357,17 @@ html, body {
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .sm\:backdrop-blur-md {
+    --tw-backdrop-blur: blur(12px);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   }
 }
 

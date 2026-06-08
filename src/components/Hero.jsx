@@ -2,8 +2,8 @@
 
 import React, { useState, useRef } from 'react';
 import { LeafyGreen, HopOff, CookingPot, Wheat } from 'lucide-react';
-import pratoOriginal from '../assets/mock-prato-04-original.jpg';
-import pratoCard from '../assets/mock-prato-04-card.jpg';
+import pratoOriginal from '../assets/hero-prato.png';
+import pratoCard from '../assets/hero-card.png';
 
 const Hero = () => {
     const [sliderPos, setSliderPos] = useState(50);
@@ -52,10 +52,10 @@ const Hero = () => {
                 />
             </div>
 
-            <div className="container mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center md:items-stretch relative z-10 gap-8 lg:gap-0">
-                <div className="md:w-1/2 text-center md:text-left mb-16 md:mb-0 animate-fade-in-up relative z-10">
-                    <div className="sm:bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 sm:p-10 shadow-2xl relative h-full flex flex-col justify-center">
-                        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6 break-words drop-shadow-lg">
+            <div className="container mx-auto px-6 sm:px-8 flex flex-col md:flex-row items-center md:items-stretch relative z-10 gap-8 lg:gap-0">
+                <div className="md:w-1/2 text-center md:text-left mb-16 md:mb-0 animate-fade-in-up relative z-10 w-full">
+                    <div className="sm:bg-white/10 sm:backdrop-blur-md sm:border sm:border-white/20 rounded-3xl py-4 sm:p-10 sm:shadow-2xl relative h-full flex flex-col justify-center">
+                        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6 break-words drop-shadow-lg">
                             Sua dieta nunca foi tão <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-amber-400 drop-shadow-md">instagramável.</span>
                         </h1>
                         <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 sm:mb-10 max-w-lg mx-auto md:mx-0 font-medium">
@@ -104,7 +104,7 @@ const Hero = () => {
                                         <img 
                                             src={pratoOriginal.src} 
                                             alt="Foto Original"
-                                            className="absolute inset-0 w-full h-full object-contain max-w-none pointer-events-none"
+                                            className="absolute inset-0 w-full h-full object-cover max-w-none pointer-events-none rounded-xl"
                                             style={{ width: `${sliderPos > 0 ? 10000 / sliderPos : 10000}%` }}
                                             draggable="false"
                                         />
