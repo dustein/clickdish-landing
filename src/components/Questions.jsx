@@ -16,6 +16,10 @@ const faqs = [
     answer: "Não! Você ganha 2 análises totalmente gratuitas para testar o aplicativo, conhecer nossa IA bem-humorada e gerar seus primeiros cards divertidos. Depois disso, você escolhe a assinatura que mais se adequa a sua necessidade."
   },
   {
+    question: "Qual o preço do ClickDish?",
+    answer: "Versão grátis disponível. Plano Premium Mensal R$ 7,90/mês ou Plano Premium Anual por R$ 67,90/ano, equivalente a R$ 5,65 por mês, ou 28% de desconto!"
+  },
+  {
     question: "O que acontece se eu atingir o limite de análises do meu plano?",
     answer: "O plano Mensal permite 3 análises diárias e o Anual permite 4 análises diárias. Caso você atinja esse limite em um único dia, não se preocupe: os limites não são acumulativos e são zerados à meia-noite todos os dias."
   },
