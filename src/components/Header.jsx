@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import logo from '../assets/logotipo-v1.webp';
 
@@ -9,7 +11,7 @@ const Header = () => {
             <nav className="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
                 <a href="/">
                     <div className="flex items-center space-x-2">
-                        <img src={logo} alt="Logo" className="h-10 sm:h-12 w-auto" />
+                        <img src={logo.src} alt="Logo" className="h-10 sm:h-12 w-auto" />
                         <span className="text-3xl sm:text-4xl font-bold text-purple-800">Click
                         <span className="text-clickdish-magenta">Dish</span>
                         </span>

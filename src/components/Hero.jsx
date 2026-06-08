@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useRef } from 'react';
 import { LeafyGreen, HopOff, CookingPot, Wheat } from 'lucide-react';
 import pratoOriginal from '../assets/mock-prato-04-original.jpg';
@@ -88,7 +90,7 @@ const Hero = () => {
                                 >
                                     {/* After Image (The Card) */}
                                     <img 
-                                        src={pratoCard}
+                                        src={pratoCard.src}
                                         alt="Prato Analisado"
                                         className="absolute inset-0 w-full h-full object-contain pointer-events-none"
                                         draggable="false"
@@ -100,7 +102,7 @@ const Hero = () => {
                                         style={{ width: `${sliderPos}%` }}
                                     >
                                         <img 
-                                            src={pratoOriginal} 
+                                            src={pratoOriginal.src} 
                                             alt="Foto Original"
                                             className="absolute inset-0 w-full h-full object-contain max-w-none pointer-events-none"
                                             style={{ width: `${sliderPos > 0 ? 10000 / sliderPos : 10000}%` }}

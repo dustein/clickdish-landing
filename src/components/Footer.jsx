@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-clickdish-green opacity-10 rounded-full"></div>
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="flex items-center justify-center space-x-2 mb-6">
-                    <img src={logo} alt="Logo" className="h-10 sm:h-12 w-auto" />
+                    <img src={logo.src} alt="Logo" className="h-10 sm:h-12 w-auto" />
                     <span className="text-3xl sm:text-4xl font-bold text-purple-500">Click<span className="text-clickdish-magenta">Dish</span></span>
                 </div>
                 <p className="text-gray-300 text-2xl md:text-4xl mx-auto mb-10 font-medium">Transformando a rotina saudável em um lifestyle visualmente épico.</p>

@@ -66,9 +66,9 @@ const RealCases = () => {
           <div className="relative group/row max-w-4xl mx-auto">
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-0 p-6 md:p-4 rounded-3xl transition-all duration-500 hover:bg-white/80 hover:backdrop-blur-sm hover:shadow-xl border border-transparent bg-amber-50 hover:border-gray-100/50">
-              <CaseImage src={prato01Original} alt="Prato original 1" label="Foto Original" rotateClass="-rotate-2" />
+              <CaseImage src={prato01Original.src} alt="Prato original 1" label="Foto Original" rotateClass="-rotate-2" />
               <ArrowSeparator />
-              <CaseImage src={prato01Card} alt="Card final 1" label="Análise da IA" rotateClass="rotate-2" />
+              <CaseImage src={prato01Card.src} alt="Card final 1" label="Análise da IA" rotateClass="rotate-2" />
             </div>
           </div>
 
@@ -76,11 +76,11 @@ const RealCases = () => {
           <div className="relative group/row max-w-5xl mx-auto">
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-0 p-6 md:p-4 rounded-3xl transition-all duration-500 hover:bg-white/80 hover:backdrop-blur-sm hover:shadow-xl border border-transparent bg-green-50 hover:border-gray-100/50">
-              <CaseImage src={prato02Original} alt="Prato original 2" label="Foto Original" rotateClass="rotate-2" />
+              <CaseImage src={prato02Original.src} alt="Prato original 2" label="Foto Original" rotateClass="rotate-2" />
               <ArrowSeparator />
-              <CaseImage src={prato02App} alt="Análise IA 2" label="Análise IA" rotateClass="-rotate-1" />
+              <CaseImage src={prato02App.src} alt="Análise IA 2" label="Análise IA" rotateClass="-rotate-1" />
               <ArrowSeparator />
-              <CaseImage src={prato02Card} alt="Card final 2" label="Card Pronto" rotateClass="rotate-2" />
+              <CaseImage src={prato02Card.src} alt="Card final 2" label="Card Pronto" rotateClass="rotate-2" />
             </div>
           </div>
 
@@ -88,9 +88,9 @@ const RealCases = () => {
           <div className="relative group/row max-w-4xl mx-auto">
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-0 p-6 md:p-4 rounded-3xl transition-all duration-500 hover:bg-white/80 hover:backdrop-blur-sm hover:shadow-xl border border-transparent bg-orange-50 hover:border-gray-100/50">
-              <CaseImage src={prato05Original} alt="Prato original 3" label="Foto Original" rotateClass="-rotate-2" />
+              <CaseImage src={prato05Original.src} alt="Prato original 3" label="Foto Original" rotateClass="-rotate-2" />
               <ArrowSeparator />
-              <CaseImage src={prato05Card} alt="Card final 3" label="Card Pronto" rotateClass="rotate-2" />
+              <CaseImage src={prato05Card.src} alt="Card final 3" label="Card Pronto" rotateClass="rotate-2" />
             </div>
           </div>
 
