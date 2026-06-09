@@ -21,7 +21,7 @@ export const metadata = {
         alt: 'ClickDish - Sua dieta instagramável',
       },
     ],
-    url: 'https://clickdish.fit',
+    url: 'https://www.clickdish.fit',
     type: 'website',
   },
   twitter: {
