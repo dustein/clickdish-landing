@@ -4,6 +4,11 @@ export const metadata = {
   metadataBase: new URL('https://clickdish.fit'),
   title: 'ClickDish - sua melhor rotina de alimentação saudável e redes sociais turbinadas',
   description: 'Com o ClickDish suas refeições serão cada vez mais fit, seu corpo e alma mais leves, e suas redes sociais mais animadas.',
+  icons: {
+    icon: '/pwa-64x64-v2.png',
+    shortcut: '/pwa-64x64-v2.png',
+    apple: '/pwa-192x192-v2.png',
+  },
   openGraph: {
     title: 'ClickDish - sua melhor rotina de alimentação saudável e redes sociais turbinadas',
     description: 'Com o ClickDish suas refeições serão cada vez mais fit, seu corpo e alma mais leves, e suas redes sociais mais animadas.',
