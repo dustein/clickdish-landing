@@ -15,7 +15,7 @@ export const metadata = {
     description: 'Com o ClickDish suas refeições serão cada vez mais fit, seu corpo e alma mais leves, e suas redes sociais mais animadas.',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'ClickDish - Sua dieta instagramável',
@@ -28,7 +28,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'ClickDish - sua melhor rotina de alimentação saudável e redes sociais turbinadas',
     description: 'Com o ClickDish suas refeições serão cada vez mais fit, seu corpo e alma mais leves, e suas redes sociais mais animadas.',
-    images: ['/og-image.png'],
+    images: ['/og-image.jpg'],
   },
 };
 
