@@ -3,7 +3,10 @@ import Script from 'next/script';
 
 export const metadata = {
   metadataBase: new URL('https://www.clickdish.fit'),
-  title: 'ClickDish - sua melhor rotina de alimentação saudável e redes sociais turbinadas',
+  title: {
+    default: 'ClickDish - sua melhor rotina de alimentação saudável e redes sociais turbinadas',
+    template: '%s | ClickDish',
+  },
   description: 'Com o ClickDish suas refeições serão cada vez mais fit, seu corpo e alma mais leves, e suas redes sociais mais animadas.',
   icons: {
     icon: '/pwa-64x64-v2.png',

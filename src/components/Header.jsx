@@ -2,9 +2,12 @@
 
 import React, { useState } from 'react';
 import logo from '../assets/logotipo-v1.webp';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const pathname = usePathname();
+    const isBlogPage = pathname && pathname.startsWith('/blog');
 
     return (
         <header className="sticky top-0 bg-white/95 backdrop-blur-sm shadow-md z-50 animate-fade-in-down">
@@ -20,9 +23,16 @@ const Header = () => {
                 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center space-x-6 text-sm">
-                    <a href="#como-funciona" className="text-clickdish-dark hover:text-clickdish-magenta font-medium transition-colors">Como Funciona</a>
-                    <a href="#precos" className="text-clickdish-dark hover:text-clickdish-green font-medium transition-colors">Preços</a>
-                    <a href="#sobre" className="text-clickdish-dark hover:text-clickdish-purple font-medium transition-colors">Sobre</a>
+                    {isBlogPage ? (
+                        <a href="/" className="text-clickdish-dark hover:text-clickdish-magenta font-medium transition-colors">Home</a>
+                    ) : (
+                        <>
+                            <a href="#como-funciona" className="text-clickdish-dark hover:text-clickdish-magenta font-medium transition-colors">Como Funciona</a>
+                            <a href="#precos" className="text-clickdish-dark hover:text-clickdish-green font-medium transition-colors">Preços</a>
+                            <a href="#sobre" className="text-clickdish-dark hover:text-clickdish-purple font-medium transition-colors">Sobre</a>
+                        </>
+                    )}
+                    <a href="/blog" className="text-clickdish-dark hover:text-clickdish-orange font-medium transition-colors">Blog</a>
                     <a href="https://app.clickdish.fit/" className="bg-green-800 text-white px-5 py-2 rounded-full font-semibold hover:bg-purple-900 transition transform hover:-translate-y-0.5">App ClickDish</a>
                 </div>
 
@@ -48,26 +58,45 @@ const Header = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden bg-white border-t border-gray-100 shadow-lg absolute w-full">
                     <div className="px-4 pt-2 pb-6 space-y-4 flex flex-col">
+                        {isBlogPage ? (
+                            <a 
+                                href="/" 
+                                className="block px-3 py-2 rounded-md text-base font-medium text-clickdish-dark hover:text-clickdish-magenta hover:bg-gray-50"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Home
+                            </a>
+                        ) : (
+                            <>
+                                <a 
+                                    href="#como-funciona" 
+                                    className="block px-3 py-2 rounded-md text-base font-medium text-clickdish-dark hover:text-clickdish-magenta hover:bg-gray-50"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    Como Funciona
+                                </a>
+                                <a 
+                                    href="#precos" 
+                                    className="block px-3 py-2 rounded-md text-base font-medium text-clickdish-dark hover:text-clickdish-green hover:bg-gray-50"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    Preços
+                                </a>
+                                <a 
+                                    href="#sobre" 
+                                    className="block px-3 py-2 rounded-md text-base font-medium text-clickdish-dark hover:text-clickdish-purple hover:bg-gray-50"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    Sobre
+                                </a>
+                            </>
+                        )}
                         <a 
-                            href="#como-funciona" 
-                            className="block px-3 py-2 rounded-md text-base font-medium text-clickdish-dark hover:text-clickdish-magenta hover:bg-gray-50"
+                            href="/blog" 
+                            className="block px-3 py-2 rounded-md text-base font-medium text-clickdish-dark hover:text-clickdish-orange hover:bg-gray-50"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
-                            Como Funciona
-                        </a>
-                        <a 
-                            href="#precos" 
-                            className="block px-3 py-2 rounded-md text-base font-medium text-clickdish-dark hover:text-clickdish-green hover:bg-gray-50"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            Preços
-                        </a>
-                        <a 
-                            href="#sobre" 
-                            className="block px-3 py-2 rounded-md text-base font-medium text-clickdish-dark hover:text-clickdish-purple hover:bg-gray-50"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                        >
-                            Sobre
+                            Blog
                         </a>
                         <div className="pt-2">
                             <a 

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///home/dustein/codes/clickdish-landing/src/app/blog/page.jsx"],"sourcesContent":["import { getAllPosts } from '@/lib/posts';\nimport Link from 'next/link';\n\nexport const metadata = {\n  title: 'Blog',\n  description: 'Dicas de alimentação saudável, receitas fit e conteúdo sobre bem-estar.',\n};\n\nexport default async function BlogIndex() {\n  const posts = await getAllPosts();\n  return (\n    <main>\n      <h1>Blog ClickDish</h1>\n      <ul>\n        {posts.map((post) => (\n          <li key={post.slug}>\n            <Link href={`/blog/${post.slug}`}>\n              <h2>{post.title}</h2>\n              <p>{post.excerpt}</p>\n            </Link>\n          </li>\n        ))}\n      </ul>\n    </main>\n  );\n}\n"],"names":["metadata","title","description","BlogIndex","posts","getAllPosts","map","post","href","slug","excerpt"],"mappings":";;;;;;;;;;;;AACA;;;;AAEO,MAAMA,WAAW;IACtBC,OAAO;IACPC,aAAa;AACf;AAEe,eAAeC;IAC5B,MAAMC,QAAQ,MAAMC;IACpB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BACED,MAAME,GAAG,CAAC,CAACC,qBACV,8OAAC;kCACC,cAAA,8OAAC,0LAAI;4BAACC,MAAM,CAAC,MAAM,EAAED,KAAKE,IAAI,EAAE;;8CAC9B,8OAAC;8CAAIF,KAAKN,KAAK;;;;;;8CACf,8OAAC;8CAAGM,KAAKG,OAAO;;;;;;;;;;;;uBAHXH,KAAKE,IAAI;;;;;;;;;;;;;;;;AAU5B"}}]
+}

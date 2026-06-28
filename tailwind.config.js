@@ -2,6 +2,7 @@
 export default {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./content/**/*.mdx",
   ],
   theme: {
     extend: {
@@ -39,5 +40,7 @@ export default {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
