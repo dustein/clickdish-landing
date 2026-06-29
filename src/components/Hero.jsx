@@ -54,15 +54,15 @@ const Hero = () => {
 
             <div className="container mx-auto px-6 sm:px-8 flex flex-col md:flex-row items-center md:items-stretch relative z-10 gap-8 lg:gap-0">
                 <div className="md:w-1/2 text-center md:text-left mb-16 md:mb-0 animate-fade-in-up relative z-10 w-full">
-                    <div className="sm:bg-white/10 sm:backdrop-blur-md sm:border sm:border-white/20 rounded-3xl py-4 sm:p-10 sm:shadow-2xl relative h-full flex flex-col justify-center">
-                        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6 break-words drop-shadow-lg">
+                    <div className="sm:bg-white/10 sm:backdrop-blur-md sm:border sm:border-white/20 rounded-3xl py-16 md:py-4 sm:p-10 sm:shadow-2xl relative h-full flex flex-col justify-center">
+                        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6 drop-shadow-lg">
                             Sua dieta nunca foi tão <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 to-amber-400 drop-shadow-md">instagramável.</span>
                         </h1>
-                        <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 sm:mb-10 max-w-lg mx-auto md:mx-0 font-medium">
+                        <p className="text-base text-xl md:text-xl text-white/90 mb-8 sm:mb-10 max-w-lg mx-auto md:mx-0 font-medium">
                             Transforme fotos simples dos seus pratos em <span className="text-teal-700 font-bold text-xl bg-white py-1 px-1">cards épicos</span> com nossa <span className="text-yellow-300 font-bold text-xl">inteligência artificial</span>. Descubra calorias, ganhe nomes criativos e turbine seu feed.
                         </p>
                         <div className="flex justify-center">
-                            <a href="https://app.clickdish.fit" className="bg-white text-slate-900 px-6 sm:px-10 py-4 sm:py-5 rounded-full font-extrabold text-base sm:text-xl hover:bg-gray-100 shadow-[0_10px_30px_rgba(255,255,255,0.2)] transform hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center">
+                            <a href="https://app.clickdish.fit" className="bg-white text-slate-900 mt-4 px-6 sm:px-10 py-4 sm:py-5 rounded-full font-extrabold text-base sm:text-xl hover:bg-gray-100 shadow-[0_10px_30px_rgba(255,255,255,0.2)] transform hover:scale-105 transition-all duration-300 w-full sm:w-auto text-center">
                                 COMECE AGORA GRÁTIS !
                             </a>
                         </div>
