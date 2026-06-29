@@ -44,3 +44,7 @@ Thumbs.db
 
 # Vite output
 *.tsbuildinfo
+
+# Next.js output
+.next/
+out/
