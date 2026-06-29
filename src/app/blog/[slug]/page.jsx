@@ -56,17 +56,14 @@ export default async function PostPage({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <article className="max-w-3xl mx-auto bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 p-8 md:p-14 mt-4">
-        <header className="mb-12 text-center border-b border-gray-100 pb-10">
-          <div className="inline-block px-4 py-1.5 rounded-full bg-clickdish-magenta/10 text-clickdish-magenta text-sm font-bold uppercase tracking-wider mb-6">
+        <header className="mb-8 sm:mb-12 text-center border-b border-gray-100 pb-10">
+          <div className="inline-block px-4 py-1.5 rounded-full bg-clickdish-magenta/10 text-clickdish-magenta text-xs md:text-sm font-bold uppercase tracking-wider mb-6">
             {post.category}
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">{post.title}</h1>
-          <time dateTime={post.date} className="text-gray-500 font-medium flex items-center justify-center gap-2">
-            Publicado em {new Date(post.date).toLocaleDateString('pt-BR')}
-          </time>
+          <h1 className="text-xl md:text-4xl font-bold text-gray-900 md:mb-6 leading-tight">{post.title}</h1>          
         </header>
         
-        <div className="prose prose-lg md:prose-xl prose-p:text-gray-600 prose-headings:text-gray-900 prose-a:text-clickdish-orange hover:prose-a:text-clickdish-magenta prose-a:font-semibold prose-a:no-underline hover:prose-a:underline prose-img:rounded-2xl max-w-none">
+        <div className="prose prose-md md:prose-xl prose-p:text-justify prose-p:hyphens-auto prose-p:text-gray-600 prose-headings:text-gray-900 prose-h2:text-xl md:prose-h2:text-3xl prose-h3:text-sm md:prose-h3:text-2xl prose-a:text-clickdish-orange hover:prose-a:text-clickdish-magenta prose-a:font-semibold prose-a:no-underline hover:prose-a:underline prose-img:rounded-2xl max-w-none">
           <PostContent />
         </div>
       </article>
